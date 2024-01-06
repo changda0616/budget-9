@@ -158,7 +158,7 @@ describe('BudgetService', function () {
         }
         expect(service.query(new Date(2024, 1, 1), new Date(2024, 1, 1))).toBe(0);
     })
-    it('No db data in same month, start date is 0201, end date is 0201', () => {
+    it('No db data in same month, start date is 0201, end date is 0215', () => {
         const service = new BudgetService();
         service.getAll = () => {
             return [{
